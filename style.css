@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+:root {
+    --header-color: #2B3844;
+    --main-color: #202C36;
+    --oq: white;
+    --soya: #00000008;
+}
+
+header h1 {
+    color: var(--oq);
+}
+
+header {
+    background-color: var(--header-color);
+    padding: 25px 0px;
+}
+
+header .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: inherit;
+    border: none;
+    color: var(--oq);
+    word-spacing: 5px;
+
+}
+
+.btn i {
+    font-size: 28px;
+    margin-right: 10px;
+}
+main{
+    background-color: var(--main-color);
+    color: var(--oq);
+}
+input{
+    padding: 18px 0px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: var(--header-color);
+    border: none;
+    margin-top: 20px;
+}
+.country{
+    background-color: var(--header-color);
+    max-width: 290px;
+    padding: 30px;
+    margin-top:70px;
+    text-align: left;
+}
+.country img{
+    margin-left:-20px;
+}
+.country p{
+    margin-top: 10px;
+}
+.katta{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+   
+}
+@media (max-width:700px){
+    header{
+        padding: 25px 30px;
+    }
+    header h1{
+     font-size: 28px;
+    }
+    input{
+        margin-left: 70px;
+    }
+    .katta{
+        justify-content: space-between;
+    }
+}
+
